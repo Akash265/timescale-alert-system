@@ -1,0 +1,176 @@
+[2025-02-26T10:44:43.245+0530] {processor.py:186} INFO - Started process (PID=100722) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:44:43.246+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:44:43.248+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.248+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:44:43.262+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:44:43.331+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.330+0530] {override.py:1930} INFO - Created Permission View: can read on DAG:example_python_operator
+[2025-02-26T10:44:43.339+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.338+0530] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_python_operator
+[2025-02-26T10:44:43.344+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.344+0530] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_python_operator
+[2025-02-26T10:44:43.355+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.355+0530] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_python_operator
+[2025-02-26T10:44:43.363+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.363+0530] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_python_operator
+[2025-02-26T10:44:43.370+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.370+0530] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_python_operator
+[2025-02-26T10:44:43.376+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.376+0530] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_python_operator
+[2025-02-26T10:44:43.377+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.377+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:44:43.385+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.385+0530] {dag.py:3262} INFO - Creating ORM DAG for example_python_operator
+[2025-02-26T10:44:43.386+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:44:43.386+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:44:43.399+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.159 seconds
+[2025-02-26T10:45:42.603+0530] {processor.py:186} INFO - Started process (PID=100868) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:45:42.604+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:45:42.605+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:45:42.605+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:45:42.615+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:45:42.625+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:45:42.625+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:45:42.633+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:45:42.632+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:45:42.645+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.046 seconds
+[2025-02-26T10:46:38.041+0530] {processor.py:186} INFO - Started process (PID=101005) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:46:38.044+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:46:38.046+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:46:38.045+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:46:38.054+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:46:38.065+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:46:38.065+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:46:38.072+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:46:38.072+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:46:38.085+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.048 seconds
+[2025-02-26T10:48:29.604+0530] {processor.py:186} INFO - Started process (PID=101301) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:48:29.605+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:48:29.606+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:48:29.606+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:48:29.624+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:48:29.639+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:48:29.639+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:48:29.649+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:48:29.649+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:48:29.668+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.068 seconds
+[2025-02-26T10:49:26.446+0530] {processor.py:186} INFO - Started process (PID=101453) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:49:26.447+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:49:26.448+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:49:26.448+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:49:26.462+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:49:26.474+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:49:26.474+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:49:26.482+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:49:26.482+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:49:26.497+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.055 seconds
+[2025-02-26T10:50:21.529+0530] {processor.py:186} INFO - Started process (PID=101545) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:50:21.530+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:50:21.532+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:50:21.532+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:50:21.540+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:50:21.551+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:50:21.551+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:50:21.558+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:50:21.558+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:50:21.572+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.047 seconds
+[2025-02-26T10:52:21.459+0530] {processor.py:186} INFO - Started process (PID=102068) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:52:21.460+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:52:21.462+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:52:21.462+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:52:21.478+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:52:21.575+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:52:21.575+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:52:21.584+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:52:21.583+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:52:21.596+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.141 seconds
+[2025-02-26T10:53:02.652+0530] {processor.py:186} INFO - Started process (PID=102386) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:53:02.654+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:53:02.656+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:53:02.655+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:53:02.672+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:53:02.764+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:53:02.763+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:53:02.771+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:53:02.771+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:53:02.783+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.136 seconds
+[2025-02-26T10:54:02.689+0530] {processor.py:186} INFO - Started process (PID=102848) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:54:02.693+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:54:02.707+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:54:02.694+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:54:02.787+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:54:03.587+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:54:03.534+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:54:03.618+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:54:03.618+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:54:03.747+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 1.079 seconds
+[2025-02-26T10:55:16.058+0530] {processor.py:186} INFO - Started process (PID=103135) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:55:16.059+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:55:16.063+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:55:16.060+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:55:16.087+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:55:16.114+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:55:16.114+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:55:16.126+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:55:16.125+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:55:16.144+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.093 seconds
+[2025-02-26T10:56:15.385+0530] {processor.py:186} INFO - Started process (PID=103250) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:56:15.386+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:56:15.388+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:56:15.388+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:56:15.397+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:56:15.407+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:56:15.407+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:56:15.415+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:56:15.415+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:56:15.427+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.046 seconds
+[2025-02-26T10:57:11.167+0530] {processor.py:186} INFO - Started process (PID=103367) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:57:11.168+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:57:11.169+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:57:11.169+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:57:11.178+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:57:11.189+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:57:11.189+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:57:11.196+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:57:11.196+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:57:11.208+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.046 seconds
+[2025-02-26T10:58:44.165+0530] {processor.py:186} INFO - Started process (PID=103733) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:58:44.168+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:58:44.177+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:58:44.170+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:58:44.312+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:58:44.412+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:58:44.392+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:58:44.454+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:58:44.454+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:58:44.530+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.377 seconds
+[2025-02-26T10:59:43.587+0530] {processor.py:186} INFO - Started process (PID=103868) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:59:43.588+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T10:59:43.589+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:59:43.589+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:59:43.606+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T10:59:43.617+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:59:43.617+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T10:59:43.626+0530] {logging_mixin.py:190} INFO - [2025-02-26T10:59:43.626+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T10:59:43.640+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.057 seconds
+[2025-02-26T11:00:35.491+0530] {processor.py:186} INFO - Started process (PID=103955) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:00:35.492+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:00:35.493+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:00:35.493+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:00:35.509+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:00:35.520+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:00:35.520+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:00:35.528+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:00:35.528+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:00:35.544+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.057 seconds
+[2025-02-26T11:01:33.254+0530] {processor.py:186} INFO - Started process (PID=104065) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:01:33.255+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:01:33.257+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:01:33.257+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:01:33.267+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:01:33.281+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:01:33.281+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:01:33.291+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:01:33.291+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:01:33.304+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.054 seconds
+[2025-02-26T11:02:28.881+0530] {processor.py:186} INFO - Started process (PID=104184) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:02:28.882+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:02:28.883+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:02:28.883+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:02:28.900+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:02:28.912+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:02:28.912+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:02:28.920+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:02:28.920+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:02:28.931+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.054 seconds
+[2025-02-26T11:04:20.297+0530] {processor.py:186} INFO - Started process (PID=104528) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:04:20.298+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:04:20.300+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:04:20.300+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:04:20.318+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:04:20.332+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:04:20.332+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:04:20.342+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:04:20.341+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:04:20.356+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.063 seconds
+[2025-02-26T11:05:17.829+0530] {processor.py:186} INFO - Started process (PID=104706) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:05:17.830+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:05:17.832+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:05:17.832+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:05:17.852+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:05:17.867+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:05:17.867+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:05:17.875+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:05:17.875+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:05:17.892+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.070 seconds
+[2025-02-26T11:06:17.054+0530] {processor.py:186} INFO - Started process (PID=104827) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:06:17.065+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:06:17.068+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:06:17.067+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:06:17.080+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:06:17.094+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:06:17.094+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:06:17.105+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:06:17.104+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:06:17.126+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.079 seconds
+[2025-02-26T11:07:11.315+0530] {processor.py:186} INFO - Started process (PID=104979) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:07:11.316+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:07:11.317+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:07:11.317+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:07:11.331+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:07:11.342+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:07:11.342+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:07:11.352+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:07:11.352+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:07:11.365+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.056 seconds
+[2025-02-26T11:08:10.534+0530] {processor.py:186} INFO - Started process (PID=105271) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:08:10.535+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:08:10.537+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:08:10.537+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:08:10.557+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:08:10.574+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:08:10.573+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:08:10.584+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:08:10.583+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:08:10.599+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.071 seconds
+[2025-02-26T11:09:08.086+0530] {processor.py:186} INFO - Started process (PID=105455) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:09:08.087+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:09:08.088+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:09:08.088+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:09:08.104+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:09:08.118+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:09:08.118+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:09:08.127+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:09:08.126+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:09:08.141+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.060 seconds
+[2025-02-26T11:10:04.780+0530] {processor.py:186} INFO - Started process (PID=105575) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:10:04.781+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2025-02-26T11:10:04.783+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:10:04.783+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:10:04.797+0530] {processor.py:925} INFO - DAG(s) 'example_python_operator' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py
+[2025-02-26T11:10:04.812+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:10:04.812+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-26T11:10:04.821+0530] {logging_mixin.py:190} INFO - [2025-02-26T11:10:04.820+0530] {dag.py:4180} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2025-02-26T11:10:04.833+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_python_operator.py took 0.058 seconds

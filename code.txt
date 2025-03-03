@@ -1,0 +1,1147 @@
+# config.py
+import os
+from pydantic_settings import BaseSettings
+from typing import Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+class Settings(BaseSettings):
+    # Database settings
+    TIMESCALE_DB_PASSWORD: str = os.getenv("TIMESCALE_DB_PASSWORD")
+    TIMESCALE_DB_HOST: str = os.getenv("TIMESCALE_DB_HOST")
+    TIMESCALE_DB_PORT: str = os.getenv("TIMESCALE_DB_PORT")
+    TIMESCALE_DB_NAME: str = os.getenv("TIMESCALE_DB_NAME")
+    TIMESCALE_DB_USER: str = os.getenv("TIMESCALE_DB_USER")
+    
+    # Construct database URL
+    @property
+    def DB_CONNECTION(self) -> str:
+        return f"postgres://{self.TIMESCALE_DB_USER}:{self.TIMESCALE_DB_PASSWORD}@{self.TIMESCALE_DB_HOST}:{self.TIMESCALE_DB_PORT}/{self.TIMESCALE_DB_NAME}?sslmode=require"
+    
+    # Email settings
+    SMTP_HOST: str = os.getenv("SMTP_HOST", "smtp.gmail.com")
+    SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587"))
+    SMTP_USERNAME: str = os.getenv("SMTP_USERNAME")
+    SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD")
+    
+    # Twilio settings
+    TWILIO_ACCOUNT_SID: str = os.getenv("TWILIO_ACCOUNT_SID")
+    TWILIO_AUTH_TOKEN: str = os.getenv("TWILIO_AUTH_TOKEN")
+    TWILIO_FROM_NUMBER: str = os.getenv("TWILIO_FROM_NUMBER")
+    
+    # Alert settings
+    MAX_RETRIES: int = int(os.getenv("MAX_RETRIES", "5"))
+    RETRY_DELAY_MINUTES: int = int(os.getenv("RETRY_DELAY_MINUTES", "10"))
+    
+    class Config:
+        env_file = ".env"
+
+# database.py
+import psycopg2
+import psycopg2.extras
+from contextlib import contextmanager
+from datetime import datetime
+import json
+import uuid
+from config import Settings
+
+settings = Settings()
+
+@contextmanager
+def get_db_connection():
+    conn = psycopg2.connect(settings.DB_CONNECTION)
+    try:
+        yield conn
+    finally:
+        conn.close()
+
+def init_db():
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            # Create enum types
+            cur.execute("""
+                DO $$ BEGIN
+                    CREATE TYPE priority_enum AS ENUM ('LOW', 'MEDIUM', 'HIGH', 'CRITICAL');
+                    CREATE TYPE status_enum AS ENUM ('ACTIVE', 'INACTIVE', 'RESOLVED', 'ACKNOWLEDGED');
+                    CREATE TYPE notification_status_enum AS ENUM ('SUCCESS', 'FAILED', 'RETRY', 'PENDING');
+                EXCEPTION 
+                    WHEN duplicate_object THEN null;
+                END $$;
+            """)
+            
+            # Create data_source table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS data_source (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    name VARCHAR(255) NOT NULL,
+                    type VARCHAR(50) NOT NULL,
+                    connection_details JSONB NOT NULL,
+                    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+                );
+            """)
+            
+            # Create team table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS team (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    name VARCHAR(255) NOT NULL,
+                    description TEXT
+                );
+            """)
+            
+            # Create user table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS users (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    name VARCHAR(255) NOT NULL,
+                    email VARCHAR(255) NOT NULL UNIQUE,
+                    team_id UUID REFERENCES team(id),
+                    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+                );
+            """)
+            
+            # Create alert_config table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS alert_config (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    name VARCHAR(255) NOT NULL,
+                    description TEXT,
+                    query TEXT NOT NULL,
+                    data_source_id UUID REFERENCES data_source(id),
+                    trigger_condition TEXT,
+                    schedule VARCHAR(50) NOT NULL,
+                    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+                    created_by UUID REFERENCES users(id),
+                    status status_enum DEFAULT 'ACTIVE',
+                    notification_channels JSONB NOT NULL,
+                    priority priority_enum DEFAULT 'MEDIUM'
+                );
+            """)
+            
+            # Create incident table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS incident (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    title VARCHAR(255) NOT NULL,
+                    description TEXT,
+                    alert_config_id UUID REFERENCES alert_config(id),
+                    status status_enum DEFAULT 'ACTIVE',
+                    priority priority_enum,
+                    assigned_team UUID REFERENCES team(id),
+                    assigned_user UUID REFERENCES users(id),
+                    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+                    resolved_at TIMESTAMPTZ,
+                    incident_data JSONB
+                );
+            """)
+            
+            # Create notification table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS notification (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    incident_id UUID REFERENCES incident(id),
+                    channel VARCHAR(50) NOT NULL,
+                    status notification_status_enum DEFAULT 'PENDING',
+                    sent_at TIMESTAMPTZ,
+                    recipient VARCHAR(255) NOT NULL,
+                    retry_count INTEGER DEFAULT 0,
+                    last_retry_at TIMESTAMPTZ
+                );
+            """)
+            
+            # Create activity table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS activity (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    incident_id UUID REFERENCES incident(id),
+                    user_id UUID REFERENCES users(id),
+                    action VARCHAR(50) NOT NULL,
+                    comment TEXT,
+                    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+                );
+            """)
+            
+            # Create AI analysis table
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS ai_analysis (
+                    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+                    incident_id UUID REFERENCES incident(id),
+                    agent_name VARCHAR(100) NOT NULL,
+                    analysis_result JSONB NOT NULL,
+                    confidence FLOAT,
+                    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+                );
+            """)
+            
+            conn.commit()
+
+# models.py
+from pydantic import BaseModel, UUID4, Field, EmailStr, validator
+from typing import List, Dict, Optional, Any, Union
+from datetime import datetime
+import uuid
+from enum import Enum
+
+class PriorityEnum(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+class StatusEnum(str, Enum):
+    ACTIVE = "ACTIVE"
+    INACTIVE = "INACTIVE"
+    RESOLVED = "RESOLVED"
+    ACKNOWLEDGED = "ACKNOWLEDGED"
+
+class NotificationStatusEnum(str, Enum):
+    SUCCESS = "SUCCESS"
+    FAILED = "FAILED"
+    RETRY = "RETRY"
+    PENDING = "PENDING"
+
+class DataSourceCreate(BaseModel):
+    name: str
+    type: str
+    connection_details: Dict[str, Any]
+
+class DataSourceResponse(BaseModel):
+    id: UUID4
+    name: str
+    type: str
+    connection_details: Dict[str, Any]
+    created_at: datetime
+
+class TeamCreate(BaseModel):
+    name: str
+    description: Optional[str] = None
+
+class TeamResponse(BaseModel):
+    id: UUID4
+    name: str
+    description: Optional[str] = None
+
+class UserCreate(BaseModel):
+    name: str
+    email: EmailStr
+    team_id: Optional[UUID4] = None
+
+class UserResponse(BaseModel):
+    id: UUID4
+    name: str
+    email: EmailStr
+    team_id: Optional[UUID4] = None
+    created_at: datetime
+
+class AlertConfigCreate(BaseModel):
+    name: str
+    description: Optional[str] = None
+    query: str
+    data_source_id: UUID4
+    trigger_condition: Optional[str] = None
+    schedule: str
+    notification_channels: Dict[str, List[str]]
+    priority: PriorityEnum = PriorityEnum.MEDIUM
+    created_by: UUID4
+
+    @validator('schedule')
+    def validate_schedule(cls, v):
+        valid_formats = ['cron:', 'interval:']
+        if not any(v.startswith(fmt) for fmt in valid_formats):
+            raise ValueError('Schedule must start with either "cron:" or "interval:"')
+        return v
+
+class AlertConfigResponse(BaseModel):
+    id: UUID4
+    name: str
+    description: Optional[str] = None
+    query: str
+    data_source_id: UUID4
+    trigger_condition: Optional[str] = None
+    schedule: str
+    created_at: datetime
+    updated_at: datetime
+    created_by: UUID4
+    status: StatusEnum
+    notification_channels: Dict[str, List[str]]
+    priority: PriorityEnum
+
+class IncidentCreate(BaseModel):
+    title: str
+    description: Optional[str] = None
+    alert_config_id: UUID4
+    priority: PriorityEnum
+    assigned_team: Optional[UUID4] = None
+    assigned_user: Optional[UUID4] = None
+    incident_data: Optional[Dict[str, Any]] = None
+
+class IncidentResponse(BaseModel):
+    id: UUID4
+    title: str
+    description: Optional[str] = None
+    alert_config_id: UUID4
+    status: StatusEnum
+    priority: PriorityEnum
+    assigned_team: Optional[UUID4] = None
+    assigned_user: Optional[UUID4] = None
+    created_at: datetime
+    resolved_at: Optional[datetime] = None
+    incident_data: Optional[Dict[str, Any]] = None
+
+class NotificationCreate(BaseModel):
+    incident_id: UUID4
+    channel: str
+    recipient: str
+
+class NotificationResponse(BaseModel):
+    id: UUID4
+    incident_id: UUID4
+    channel: str
+    status: NotificationStatusEnum
+    sent_at: Optional[datetime] = None
+    recipient: str
+    retry_count: int
+    last_retry_at: Optional[datetime] = None
+
+class ActivityCreate(BaseModel):
+    incident_id: UUID4
+    user_id: UUID4
+    action: str
+    comment: Optional[str] = None
+
+class ActivityResponse(BaseModel):
+    id: UUID4
+    incident_id: UUID4
+    user_id: UUID4
+    action: str
+    comment: Optional[str] = None
+    created_at: datetime
+
+class IncidentResolveRequest(BaseModel):
+    incident_id: UUID4
+    resolved_by: UUID4
+    resolution_comments: Optional[str] = None
+
+class AiAnalysisCreate(BaseModel):
+    incident_id: UUID4
+    agent_name: str
+    analysis_result: Dict[str, Any]
+    confidence: Optional[float] = None
+
+class AiAnalysisResponse(BaseModel):
+    id: UUID4
+    incident_id: UUID4
+    agent_name: str
+    analysis_result: Dict[str, Any]
+    confidence: Optional[float] = None
+    created_at: datetime
+
+# notification.py
+from twilio.rest import Client
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from datetime import datetime
+from config import Settings
+import json
+from database import get_db_connection
+import psycopg2.extras
+import logging
+
+logger = logging.getLogger(__name__)
+
+class NotificationService:
+    def __init__(self, settings):
+        self.settings = settings
+        self.twilio_client = Client(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
+    
+    def send_email(self, to_emails, subject, body, incident_id=None, notification_id=None):
+        msg = MIMEMultipart()
+        msg['From'] = self.settings.SMTP_USERNAME
+        msg['To'] = ", ".join(to_emails)
+        msg['Subject'] = subject
+        
+        msg.attach(MIMEText(body, 'plain'))
+        
+        try:
+            with smtplib.SMTP(self.settings.SMTP_HOST, self.settings.SMTP_PORT) as server:
+                server.starttls()
+                server.login(self.settings.SMTP_USERNAME, self.settings.SMTP_PASSWORD)
+                server.send_message(msg)
+            
+            self._update_notification_status(notification_id, 'SUCCESS')
+            return True
+        except Exception as e:
+            logger.error(f"Email sending failed: {str(e)}")
+            self._update_notification_status(notification_id, 'FAILED')
+            return False
+    
+    def send_whatsapp(self, to_numbers, body, incident_id=None, notification_id=None):
+        success = True
+        for number in to_numbers:
+            try:
+                self.twilio_client.messages.create(
+                    body=body,
+                    from_=f"whatsapp:{self.settings.TWILIO_FROM_NUMBER}",
+                    to=f"whatsapp:{number}"
+                )
+            except Exception as e:
+                logger.error(f"WhatsApp sending failed to {number}: {str(e)}")
+                success = False
+        
+        self._update_notification_status(notification_id, 'SUCCESS' if success else 'FAILED')
+        return success
+    
+    def _update_notification_status(self, notification_id, status):
+        if not notification_id:
+            return
+            
+        with get_db_connection() as conn:
+            with conn.cursor() as cur:
+                if status == 'FAILED':
+                    cur.execute("""
+                        UPDATE notification 
+                        SET status = %s, 
+                            retry_count = retry_count + 1,
+                            last_retry_at = CURRENT_TIMESTAMP
+                        WHERE id = %s
+                    """, (status, notification_id))
+                else:
+                    cur.execute("""
+                        UPDATE notification 
+                        SET status = %s, 
+                            sent_at = CURRENT_TIMESTAMP
+                        WHERE id = %s
+                    """, (status, notification_id))
+                conn.commit()
+    
+    def create_incident_message(self, incident, query_result):
+        template = f"""
+ALERT: {incident['title']}
+Priority: {incident['priority']}
+Status: {incident['status']}
+Created at: {incident['created_at']}
+
+{incident.get('description', '')}
+
+Query Results:
+{json.dumps(query_result, indent=2)}
+
+Please review and take necessary action.
+To mark this incident as resolved, please use the resolution endpoint.
+        """
+        return template.strip()
+    
+    def send_notification(self, incident_id, channel, recipient, message):
+        # Create notification record
+        with get_db_connection() as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("""
+                    INSERT INTO notification 
+                    (incident_id, channel, recipient, status) 
+                    VALUES (%s, %s, %s, 'PENDING')
+                    RETURNING id
+                """, (incident_id, channel, recipient))
+                notification_id = cur.fetchone()['id']
+                conn.commit()
+        
+        # Send based on channel type
+        if channel == 'email':
+            return self.send_email(
+                [recipient], 
+                f"Incident Alert: {incident_id}", 
+                message,
+                incident_id,
+                notification_id
+            )
+        elif channel == 'whatsapp':
+            return self.send_whatsapp(
+                [recipient],
+                message,
+                incident_id,
+                notification_id
+            )
+        else:
+            logger.error(f"Unsupported notification channel: {channel}")
+            return False
+
+# api.py
+from fastapi import FastAPI, HTTPException, Depends, Query
+from typing import List, Optional, Dict, Any
+import uuid
+from datetime import datetime
+import json
+import psycopg2.extras
+from database import get_db_connection, init_db
+from models import (
+    DataSourceCreate, DataSourceResponse,
+    TeamCreate, TeamResponse,
+    UserCreate, UserResponse,
+    AlertConfigCreate, AlertConfigResponse,
+    IncidentCreate, IncidentResponse,
+    NotificationCreate, NotificationResponse,
+    ActivityCreate, ActivityResponse,
+    IncidentResolveRequest,
+    StatusEnum, PriorityEnum
+)
+from notification import NotificationService
+from config import Settings
+
+app = FastAPI(title="Alert Notification System")
+settings = Settings()
+
+@app.on_event("startup")
+async def startup_event():
+    init_db()
+
+# Data Source Endpoints
+@app.post("/data-sources/", response_model=DataSourceResponse)
+def create_data_source(data_source: DataSourceCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                INSERT INTO data_source (name, type, connection_details)
+                VALUES (%s, %s, %s)
+                RETURNING id, name, type, connection_details, created_at;
+            """, (
+                data_source.name,
+                data_source.type,
+                json.dumps(data_source.connection_details)
+            ))
+            conn.commit()
+            return cur.fetchone()
+
+@app.get("/data-sources/", response_model=List[DataSourceResponse])
+def list_data_sources():
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("SELECT id, name, type, connection_details, created_at FROM data_source")
+            return cur.fetchall()
+
+# Team Endpoints
+@app.post("/teams/", response_model=TeamResponse)
+def create_team(team: TeamCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                INSERT INTO team (name, description)
+                VALUES (%s, %s)
+                RETURNING id, name, description;
+            """, (
+                team.name,
+                team.description
+            ))
+            conn.commit()
+            return cur.fetchone()
+
+@app.get("/teams/", response_model=List[TeamResponse])
+def list_teams():
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("SELECT id, name, description FROM team")
+            return cur.fetchall()
+
+# User Endpoints
+@app.post("/users/", response_model=UserResponse)
+def create_user(user: UserCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                INSERT INTO users (name, email, team_id)
+                VALUES (%s, %s, %s)
+                RETURNING id, name, email, team_id, created_at;
+            """, (
+                user.name,
+                user.email,
+                user.team_id
+            ))
+            conn.commit()
+            return cur.fetchone()
+
+@app.get("/users/", response_model=List[UserResponse])
+def list_users():
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("SELECT id, name, email, team_id, created_at FROM users")
+            return cur.fetchall()
+
+# Alert Config Endpoints
+@app.post("/alert-configs/", response_model=AlertConfigResponse)
+def create_alert_config(alert_config: AlertConfigCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            now = datetime.now()
+            cur.execute("""
+                INSERT INTO alert_config 
+                (name, description, query, data_source_id, trigger_condition, 
+                schedule, created_at, updated_at, created_by, notification_channels, priority)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                RETURNING id, name, description, query, data_source_id, 
+                          trigger_condition, schedule, created_at, updated_at, 
+                          created_by, status, notification_channels, priority;
+            """, (
+                alert_config.name,
+                alert_config.description,
+                alert_config.query,
+                alert_config.data_source_id,
+                alert_config.trigger_condition,
+                alert_config.schedule,
+                now,
+                now,
+                alert_config.created_by,
+                json.dumps(alert_config.notification_channels),
+                alert_config.priority
+            ))
+            conn.commit()
+            result = cur.fetchone()
+            
+            # Register this alert with Airflow (this would be handled by the Airflow DAG generator)
+            # In a real implementation, you might want to trigger an Airflow API call here
+            # or have a separate process that syncs alert configs with Airflow
+            
+            return result
+
+@app.get("/alert-configs/", response_model=List[AlertConfigResponse])
+def list_alert_configs(
+    status: Optional[StatusEnum] = None,
+    priority: Optional[PriorityEnum] = None,
+    skip: int = 0,
+    limit: int = 100
+):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            query = """
+                SELECT id, name, description, query, data_source_id, trigger_condition, 
+                       schedule, created_at, updated_at, created_by, status, 
+                       notification_channels, priority
+                FROM alert_config
+                WHERE 1=1
+            """
+            params = []
+            
+            if status:
+                query += " AND status = %s"
+                params.append(status)
+            if priority:
+                query += " AND priority = %s"
+                params.append(priority)
+            
+            query += " ORDER BY created_at DESC LIMIT %s OFFSET %s"
+            params.extend([limit, skip])
+            
+            cur.execute(query, params)
+            return cur.fetchall()
+
+@app.get("/alert-configs/{alert_id}", response_model=AlertConfigResponse)
+def get_alert_config(alert_id: uuid.UUID):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT id, name, description, query, data_source_id, trigger_condition, 
+                       schedule, created_at, updated_at, created_by, status, 
+                       notification_channels, priority
+                FROM alert_config
+                WHERE id = %s
+            """, (alert_id,))
+            result = cur.fetchone()
+            if not result:
+                raise HTTPException(status_code=404, detail="Alert config not found")
+            return result
+
+@app.put("/alert-configs/{alert_id}/status", response_model=AlertConfigResponse)
+def update_alert_config_status(alert_id: uuid.UUID, status: StatusEnum):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                UPDATE alert_config 
+                SET status = %s, updated_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+                RETURNING id, name, description, query, data_source_id, trigger_condition, 
+                          schedule, created_at, updated_at, created_by, status, 
+                          notification_channels, priority;
+            """, (status, alert_id))
+            conn.commit()
+            result = cur.fetchone()
+            if not result:
+                raise HTTPException(status_code=404, detail="Alert config not found")
+            return result
+
+# Incident Endpoints
+@app.post("/incidents/", response_model=IncidentResponse)
+def create_incident(incident: IncidentCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            # Create the incident
+            cur.execute("""
+                INSERT INTO incident 
+                (title, description, alert_config_id, priority, assigned_team, 
+                assigned_user, incident_data)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+                RETURNING id, title, description, alert_config_id, status, priority, 
+                          assigned_team, assigned_user, created_at, resolved_at, incident_data;
+            """, (
+                incident.title,
+                incident.description,
+                incident.alert_config_id,
+                incident.priority,
+                incident.assigned_team,
+                incident.assigned_user,
+                json.dumps(incident.incident_data) if incident.incident_data else None
+            ))
+            new_incident = cur.fetchone()
+            
+            # Get alert config to send notifications
+            cur.execute("""
+                SELECT notification_channels
+                FROM alert_config
+                WHERE id = %s
+            """, (incident.alert_config_id,))
+            alert_config = cur.fetchone()
+            
+            # Record activity
+            cur.execute("""
+                INSERT INTO activity (incident_id, user_id, action, comment)
+                VALUES (%s, %s, %s, %s)
+            """, (
+                new_incident['id'],
+                incident.assigned_user if incident.assigned_user else uuid.UUID('00000000-0000-0000-0000-000000000000'),
+                'CREATE',
+                'Incident created'
+            ))
+            
+            conn.commit()
+            
+            # Send notifications (this would be async in a real implementation)
+            if alert_config and 'notification_channels' in alert_config:
+                notification_service = NotificationService(settings)
+                message = notification_service.create_incident_message(
+                    new_incident, 
+                    incident.incident_data
+                )
+                
+                channels = alert_config['notification_channels']
+                if isinstance(channels, str):
+                    channels = json.loads(channels)
+                
+                for channel, recipients in channels.items():
+                    for recipient in recipients:
+                        notification_service.send_notification(
+                            new_incident['id'],
+                            channel,
+                            recipient,
+                            message
+                        )
+            
+            return new_incident
+
+@app.get("/incidents/", response_model=List[IncidentResponse])
+def list_incidents(
+    status: Optional[StatusEnum] = None,
+    priority: Optional[PriorityEnum] = None,
+    assigned_team: Optional[uuid.UUID] = None,
+    assigned_user: Optional[uuid.UUID] = None,
+    start_date: Optional[datetime] = None,
+    end_date: Optional[datetime] = None,
+    skip: int = 0,
+    limit: int = 100
+):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            query = """
+                SELECT id, title, description, alert_config_id, status, priority, 
+                       assigned_team, assigned_user, created_at, resolved_at, incident_data
+                FROM incident
+                WHERE 1=1
+            """
+            params = []
+            
+            if status:
+                query += " AND status = %s"
+                params.append(status)
+            if priority:
+                query += " AND priority = %s"
+                params.append(priority)
+            if assigned_team:
+                query += " AND assigned_team = %s"
+                params.append(assigned_team)
+            if assigned_user:
+                query += " AND assigned_user = %s"
+                params.append(assigned_user)
+            if start_date and end_date:
+                query += " AND created_at BETWEEN %s AND %s"
+                params.extend([start_date, end_date])
+            
+            query += " ORDER BY created_at DESC LIMIT %s OFFSET %s"
+            params.extend([limit, skip])
+            
+            cur.execute(query, params)
+            return cur.fetchall()
+
+@app.post("/incidents/{incident_id}/resolve", response_model=IncidentResponse)
+def resolve_incident(incident_id: uuid.UUID, resolution: IncidentResolveRequest):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            # Update incident status
+            cur.execute("""
+                UPDATE incident 
+                SET status = 'RESOLVED', resolved_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+                RETURNING id, title, description, alert_config_id, status, priority, 
+                          assigned_team, assigned_user, created_at, resolved_at, incident_data;
+            """, (incident_id,))
+            updated_incident = cur.fetchone()
+            
+            if not updated_incident:
+                raise HTTPException(status_code=404, detail="Incident not found")
+            
+            # Record resolution activity
+            cur.execute("""
+                INSERT INTO activity (incident_id, user_id, action, comment)
+                VALUES (%s, %s, %s, %s)
+            """, (
+                incident_id,
+                resolution.resolved_by,
+                'RESOLVE',
+                resolution.resolution_comments or 'Incident resolved'
+            ))
+            
+            conn.commit()
+            return updated_incident
+
+# Activity Endpoints
+@app.post("/activities/", response_model=ActivityResponse)
+def create_activity(activity: ActivityCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                INSERT INTO activity (incident_id, user_id, action, comment)
+                VALUES (%s, %s, %s, %s)
+                RETURNING id, incident_id, user_id, action, comment, created_at;
+            """, (
+                activity.incident_id,
+                activity.user_id,
+                activity.action,
+                activity.comment
+            ))
+            conn.commit()
+            return cur.fetchone()
+
+# Continuing api.py from where it was cut off
+@app.get("/incidents/{incident_id}/activities", response_model=List[ActivityResponse])
+def list_incident_activities(incident_id: uuid.UUID):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT id, incident_id, user_id, action, comment, created_at
+                FROM activity
+                WHERE incident_id = %s
+                ORDER BY created_at DESC
+            """, (incident_id,))
+            return cur.fetchall()
+
+# AI Analysis Endpoints
+@app.post("/incidents/{incident_id}/ai-analysis", response_model=AiAnalysisResponse)
+def create_ai_analysis(incident_id: uuid.UUID, analysis: AiAnalysisCreate):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                INSERT INTO ai_analysis (incident_id, agent_name, analysis_result, confidence)
+                VALUES (%s, %s, %s, %s)
+                RETURNING id, incident_id, agent_name, analysis_result, confidence, created_at;
+            """, (
+                incident_id,
+                analysis.agent_name,
+                json.dumps(analysis.analysis_result),
+                analysis.confidence
+            ))
+            conn.commit()
+            return cur.fetchone()
+
+@app.get("/incidents/{incident_id}/ai-analysis", response_model=List[AiAnalysisResponse])
+def list_incident_ai_analysis(incident_id: uuid.UUID):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT id, incident_id, agent_name, analysis_result, confidence, created_at
+                FROM ai_analysis
+                WHERE incident_id = %s
+                ORDER BY created_at DESC
+            """, (incident_id,))
+            return cur.fetchall()
+
+# Notification Endpoints
+@app.get("/notifications/", response_model=List[NotificationResponse])
+def list_notifications(
+    status: Optional[str] = None,
+    incident_id: Optional[uuid.UUID] = None,
+    channel: Optional[str] = None,
+    skip: int = 0,
+    limit: int = 100
+):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            query = """
+                SELECT id, incident_id, channel, status, sent_at, recipient, retry_count, last_retry_at
+                FROM notification
+                WHERE 1=1
+            """
+            params = []
+            
+            if status:
+                query += " AND status = %s"
+                params.append(status)
+            if incident_id:
+                query += " AND incident_id = %s"
+                params.append(incident_id)
+            if channel:
+                query += " AND channel = %s"
+                params.append(channel)
+            
+            query += " ORDER BY sent_at DESC NULLS FIRST LIMIT %s OFFSET %s"
+            params.extend([limit, skip])
+            
+            cur.execute(query, params)
+            return cur.fetchall()
+
+@app.post("/notifications/retry/{notification_id}", response_model=NotificationResponse)
+def retry_notification(notification_id: uuid.UUID):
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            # Get notification details
+            cur.execute("""
+                SELECT n.id, n.incident_id, n.channel, n.recipient, i.title, i.incident_data
+                FROM notification n
+                JOIN incident i ON n.incident_id = i.id
+                WHERE n.id = %s AND n.status = 'FAILED'
+            """, (notification_id,))
+            notification = cur.fetchone()
+            
+            if not notification:
+                raise HTTPException(status_code=404, detail="Failed notification not found")
+            
+            # Update notification to RETRY status
+            cur.execute("""
+                UPDATE notification
+                SET status = 'RETRY', retry_count = retry_count + 1, last_retry_at = CURRENT_TIMESTAMP
+                WHERE id = %s
+                RETURNING id, incident_id, channel, status, sent_at, recipient, retry_count, last_retry_at
+            """, (notification_id,))
+            conn.commit()
+            updated_notification = cur.fetchone()
+            
+            # Send notification again
+            notification_service = NotificationService(settings)
+            message = notification_service.create_incident_message(
+                {"title": notification["title"], "id": notification["incident_id"], "priority": "MEDIUM", "status": "ACTIVE", "created_at": datetime.now()},
+                notification["incident_data"]
+            )
+            
+            if notification["channel"] == "email":
+                notification_service.send_email(
+                    [notification["recipient"]], 
+                    f"Incident Alert: {notification['incident_id']}", 
+                    message,
+                    notification["incident_id"],
+                    notification_id
+                )
+            elif notification["channel"] == "whatsapp":
+                notification_service.send_whatsapp(
+                    [notification["recipient"]],
+                    message,
+                    notification["incident_id"],
+                    notification_id
+                )
+            
+            return updated_notification
+
+# Dashboard Endpoints
+@app.get("/dashboard/summary")
+def get_dashboard_summary():
+    with get_db_connection() as conn:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            # Get count of active incidents by priority
+            cur.execute("""
+                SELECT priority, COUNT(*) as count
+                FROM incident
+                WHERE status = 'ACTIVE'
+                GROUP BY priority
+                ORDER BY CASE 
+                    WHEN priority = 'CRITICAL' THEN 1
+                    WHEN priority = 'HIGH' THEN 2
+                    WHEN priority = 'MEDIUM' THEN 3
+                    WHEN priority = 'LOW' THEN 4
+                END
+            """)
+            active_by_priority = cur.fetchall()
+            
+            # Get count of incidents by status
+            cur.execute("""
+                SELECT status, COUNT(*) as count
+                FROM incident
+                GROUP BY status
+            """)
+            by_status = cur.fetchall()
+            
+            # Get recent incidents
+            cur.execute("""
+                SELECT id, title, status, priority, created_at
+                FROM incident
+                ORDER BY created_at DESC
+                LIMIT 5
+            """)
+            recent_incidents = cur.fetchall()
+            
+            # Get notification success rate
+            cur.execute("""
+                SELECT 
+                    COUNT(*) as total,
+                    SUM(CASE WHEN status = 'SUCCESS' THEN 1 ELSE 0 END) as success,
+                    SUM(CASE WHEN status = 'FAILED' THEN 1 ELSE 0 END) as failed
+                FROM notification
+                WHERE status IN ('SUCCESS', 'FAILED')
+            """)
+            notification_stats = cur.fetchone()
+            
+            success_rate = 0
+            if notification_stats and notification_stats["total"] > 0:
+                success_rate = (notification_stats["success"] / notification_stats["total"]) * 100
+            
+            return {
+                "active_incidents_by_priority": active_by_priority,
+                "incidents_by_status": by_status,
+                "recent_incidents": recent_incidents,
+                "notification_success_rate": round(success_rate, 2),
+                "total_alerts": get_count(cur, "alert_config"),
+                "total_incidents": get_count(cur, "incident"),
+                "total_users": get_count(cur, "users"),
+                "total_teams": get_count(cur, "team")
+            }
+
+def get_count(cursor, table):
+    cursor.execute(f"SELECT COUNT(*) as count FROM {table}")
+    result = cursor.fetchone()
+    return result["count"] if result else 0
+
+# Scheduler code (this would typically be in a separate file)
+# scheduler.py
+import datetime
+import time
+import threading
+import schedule
+import json
+from database import get_db_connection
+import psycopg2.extras
+from notification import NotificationService
+from config import Settings
+import logging
+
+logger = logging.getLogger(__name__)
+
+class AlertScheduler:
+    def __init__(self, settings):
+        self.settings = settings
+        self.notification_service = NotificationService(settings)
+        self.running = False
+    
+    def start(self):
+        """Start the scheduler in a background thread"""
+        if self.running:
+            return
+        
+        self.running = True
+        threading.Thread(target=self._run_scheduler, daemon=True).start()
+        logger.info("Alert scheduler started")
+    
+    def _run_scheduler(self):
+        """Run the scheduler loop"""
+        # Schedule retry job to run every 10 minutes
+        schedule.every(self.settings.RETRY_DELAY_MINUTES).minutes.do(self._retry_failed_notifications)
+        
+        while self.running:
+            schedule.run_pending()
+            time.sleep(1)
+    
+    def _retry_failed_notifications(self):
+        """Retry failed notifications that haven't exceeded max retry count"""
+        with get_db_connection() as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("""
+                    SELECT n.id, n.incident_id, n.channel, n.recipient, n.retry_count,
+                           i.title, i.incident_data
+                    FROM notification n
+                    JOIN incident i ON n.incident_id = i.id
+                    WHERE n.status = 'FAILED' 
+                      AND n.retry_count < %s
+                      AND n.last_retry_at < (CURRENT_TIMESTAMP - INTERVAL '%s minutes')
+                """, (self.settings.MAX_RETRIES, self.settings.RETRY_DELAY_MINUTES))
+                
+                failed_notifications = cur.fetchall()
+                
+                for notification in failed_notifications:
+                    # Update status to RETRY
+                    cur.execute("""
+                        UPDATE notification
+                        SET status = 'RETRY', last_retry_at = CURRENT_TIMESTAMP
+                        WHERE id = %s
+                    """, (notification['id'],))
+                    conn.commit()
+                    
+                    # Create message and send based on channel
+                    message = self.notification_service.create_incident_message(
+                        {
+                            "title": notification["title"],
+                            "id": notification["incident_id"],
+                            "priority": "MEDIUM",  # This would come from the incident in a real implementation
+                            "status": "ACTIVE",
+                            "created_at": datetime.datetime.now()
+                        },
+                        notification["incident_data"]
+                    )
+                    
+                    if notification["channel"] == "email":
+                        success = self.notification_service.send_email(
+                            [notification["recipient"]], 
+                            f"Incident Alert: {notification['incident_id']} (Retry)", 
+                            message,
+                            notification["incident_id"],
+                            notification["id"]
+                        )
+                    elif notification["channel"] == "whatsapp":
+                        success = self.notification_service.send_whatsapp(
+                            [notification["recipient"]],
+                            message,
+                            notification["incident_id"],
+                            notification["id"]
+                        )
+                    
+                    logger.info(f"Retry notification {notification['id']}: {'Success' if success else 'Failed'}")
+
+# Main application entry point
+# main.py
+import uvicorn
+import logging
+from api import app
+from scheduler import AlertScheduler
+from config import Settings
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("alert_system.log")
+    ]
+)
+
+if __name__ == "__main__":
+    # Start the scheduler
+    settings = Settings()
+    scheduler = AlertScheduler(settings)
+    scheduler.start()
+    
+    # Start the API server
+    uvicorn.run(app, host="0.0.0.0", port=8000)
