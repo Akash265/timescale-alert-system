@@ -10,7 +10,7 @@ try:
         INSERT INTO dc_order (
             business_unit, order_number, priority, pipeline, created_at
         ) VALUES (
-            'SEP01', 'ORD00000000001', 'HIGH', 'ECOMM', NOW()
+            'SEP01', 'ORD0000001222250', 'HIGH', 'ECOMM', NOW()
         );
     """)
     conn.commit()

@@ -80,19 +80,19 @@ class NotificationService:
     
     def create_incident_message(self, incident, query_result):
         template = f"""
-ALERT: {incident['title']}
-Priority: {incident['priority']}
-Status: {incident['status']}
-Created at: {incident['created_at']}
+        ALERT: {incident['title']}
+        Priority: {incident['priority']}
+        Status: {incident['status']}
+        Created at: {incident['created_at']}
 
-{incident.get('description', '')}
+        {incident.get('description', '')}
 
-Query Results:
-{json.dumps(query_result, indent=2)}
+        Query Results:
+        {json.dumps(query_result, indent=2)}
 
-Please review and take necessary action.
-To mark this incident as resolved, please use the resolution endpoint.
-        """
+        Please review and take necessary action.
+        To mark this incident as resolved, please use the resolution endpoint.
+                """
         return template.strip()
     
     def send_notification(self, incident_id, channel, recipient, message):

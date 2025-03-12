@@ -14,35 +14,30 @@ from config import Settings
 import logging
 
 logger = logging.getLogger(__name__)
-
 class AlertScheduler:
     def __init__(self, settings):
         self.settings = settings
         self.notification_service = NotificationService(settings)
         self.running = False
         self.alert_configs = {}  # Store alert configs and their last results
-        self.listened_channels = set()  # Track channels we’re listening to
     
     def start(self):
-        """Start the scheduler and listener in background threads"""
+        """Start the scheduler in a background thread"""
         if self.running:
             return
         
         self.running = True
         
-        # Initialize alerts and set up triggers
+        # Initialize alerts
         self._initialize_alerts()
         
         # Start scheduler thread
         threading.Thread(target=self._run_scheduler, daemon=True).start()
         
-        # Start listener thread
-        threading.Thread(target=self._listen_for_inserts, daemon=True).start()
-        
         logger.info("Alert scheduler started")
     
     def _initialize_alerts(self):
-        """Load all active alert configs, execute them, and set up triggers"""
+        """Load all active alert configs, execute them, and schedule periodic checks"""
         with get_db_connection() as conn:
             with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
                 cur.execute("""
@@ -57,9 +52,6 @@ class AlertScheduler:
                     alert_id = str(alert['id'])
                     schedule_minutes = self._parse_schedule(alert['schedule'])
                     
-                    # Set up triggers for tables in the query
-                    self._setup_triggers(alert['query'], cur)
-                    
                     # Execute immediately and notify
                     logger.info(f"Executing initial check for alert {alert['name']} on startup")
                     current_result = self._execute_query(alert['query'], alert['data_source_id'])
@@ -73,52 +65,6 @@ class AlertScheduler:
                         'last_result': current_result,
                         'alert': alert
                     }
-    
-    def _setup_triggers(self, query, cursor):
-        """Set up triggers for all tables referenced in the query"""
-        # Simple regex to extract table names after FROM/JOIN
-        table_pattern = r'(?:FROM|JOIN)\s+([a-zA-Z_][a-zA-Z0-9_]*)'
-        tables = re.findall(table_pattern, query, re.IGNORECASE)
-        
-        for table in set(tables):  # Avoid duplicates
-            channel_name = f"{table}_insert"
-            if channel_name not in self.listened_channels:
-                try:
-                    # Create notification function
-                    cursor.execute(f"""
-                        CREATE OR REPLACE FUNCTION notify_{table}_insert() RETURNS TRIGGER AS $$
-                        BEGIN
-                            PERFORM pg_notify('{channel_name}', NEW.order_number::text);
-                            RETURN NEW;
-                        END;
-                        $$ LANGUAGE plpgsql;
-                    """)
-                    
-                    # Create trigger
-                    cursor.execute(f"""
-                        DO $$
-                        BEGIN
-                            IF NOT EXISTS (
-                                SELECT 1 
-                                FROM pg_trigger 
-                                WHERE tgname = '{table}_insert_trigger' 
-                                AND tgrelid = '{table}'::regclass
-                            ) THEN
-                                CREATE TRIGGER {table}_insert_trigger
-                                AFTER INSERT ON {table}
-                                FOR EACH ROW
-                                EXECUTE FUNCTION notify_{table}_insert();
-                            END IF;
-                        END;
-                        $$;
-                    """)
-                    self.listened_channels.add(channel_name)
-                    logger.info(f"Set up trigger for table {table}")
-                except psycopg2.Error as e:
-                    logger.error(f"Failed to set up trigger for {table}: {e}")
-                    cursor.connection.rollback()
-                else:
-                    cursor.connection.commit()
     
     def _run_scheduler(self):
         """Run the scheduler loop"""
@@ -146,50 +92,28 @@ class AlertScheduler:
                 cur.execute(query)
                 return cur.fetchall()
     
-    def _listen_for_inserts(self):
-        """Listen for new row insertions across all tables"""
-        conn = psycopg2.connect(self.settings.DB_CONNECTION)
-        conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
-        cur = conn.cursor()
-        
-        # Listen to all channels set up
-        for channel in self.listened_channels:
-            cur.execute(f"LISTEN {channel};")
-        
-        logger.info(f"Listening for inserts on channels: {self.listened_channels}")
-        while self.running:
-            if select.select([conn], [], [], 5) == ([], [], []):
-                continue
-            conn.poll()
-            while conn.notifies:
-                notify = conn.notifies.pop(0)
-                logger.info(f"Received notification on {notify.channel}: {notify.payload}")
-                self._handle_insert_event(notify.channel.split('_insert')[0])
-    
-    def _handle_insert_event(self, table_name):
-        """Handle new row insertion by running alerts referencing the table"""
-        for alert_id, config in self.alert_configs.items():
-            alert = config['alert']
-            if table_name in alert['query'].lower():  # Check if table is in query
-                logger.info(f"Running query for alert {alert['name']} due to insert in {table_name}")
-                self._check_alert(alert)
-    
     def _check_alert(self, alert):
-        """Check alert condition and create incident if triggered"""
+        """Check if query result is different from previous run and create incident if changed"""
         alert_id = str(alert['id'])
         try:
+            # Execute the query
             current_result = self._execute_query(alert['query'], alert['data_source_id'])
             logger.info(f"Executed query for alert {alert['name']}: {len(current_result)} rows")
             
+            # Get the previous result
             last_result = self.alert_configs.get(alert_id, {}).get('last_result', [])
-            current_orders = {row['order_number'] for row in current_result}
-            last_orders = {row['order_number'] for row in last_result} if last_result else set()
             
-            if current_orders != last_orders:
-                new_orders = current_orders - last_orders
-                logger.info(f"New order numbers detected for alert {alert['name']}: {new_orders}")
+            # Convert to sets of tuples for comparison (since dicts aren't hashable)
+            # This compares the entire result content, not just order_number
+            current_set = set(tuple(sorted(row.items())) for row in current_result)
+            last_set = set(tuple(sorted(row.items())) for row in last_result) if last_result else set()
+            
+            # Check if results are different and not empty
+            if current_set != last_set and current_result:
+                logger.info(f"Change detected for alert {alert['name']}: {len(current_result)} rows")
                 self._create_incident(alert, current_result)
             
+            # Store the current result for next comparison
             self.alert_configs[alert_id]['last_result'] = current_result
         except Exception as e:
             logger.error(f"Error checking alert {alert['name']}: {str(e)}")
@@ -316,7 +240,7 @@ class AlertScheduler:
                             notification["incident_id"],
                             notification["id"]
                         )
-
+                        
 if __name__ == "__main__":
     scheduler = AlertScheduler(Settings())
     scheduler.start()
