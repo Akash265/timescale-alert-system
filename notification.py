@@ -46,7 +46,7 @@ class NotificationService:
                 self.twilio_client.messages.create(
                     body=body,
                     from_=f"whatsapp:{self.settings.TWILIO_FROM_NUMBER}",
-                    to=f"whatsapp:{number}"
+                    to=f"whatsapp:+91{number}"
                 )
             except Exception as e:
                 logger.error(f"WhatsApp sending failed to {number}: {str(e)}")

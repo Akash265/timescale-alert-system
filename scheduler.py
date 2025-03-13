@@ -54,7 +54,10 @@ class AlertScheduler:
                     
                     # Execute immediately and notify
                     logger.info(f"Executing initial check for alert {alert['name']} on startup")
-                    current_result = self._execute_query(alert['query'], alert['data_source_id'])
+                    if alert['query']:
+                        current_result = self._execute_query(alert['query'], alert['data_source_id'])
+                    else:
+                        current_result = [{'output':'Alert Query was Empty'}]
                     logger.info(f"Initial run for alert {alert['name']}: {len(current_result)} rows")
                     self._notify_initial_result(alert, current_result)
                     
