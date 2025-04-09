@@ -20,6 +20,12 @@ from models import (
 )
 from notification import NotificationService
 from config import Settings
+from airflow.models.dagbag import DagBag
+from airflow.dags.airflow_dags import create_alert_dag, parse_schedule,check_alert
+import json
+from datetime import datetime
+
+app = FastAPI()
 
 app = FastAPI(title="Alert Notification System")
 settings = Settings()
@@ -99,7 +105,8 @@ def list_users():
             cur.execute("SELECT id, name, email, team_id, created_at FROM users")
             return cur.fetchall()
 
-# Alert Config Endpoints
+
+
 @app.post("/alert-configs/", response_model=AlertConfigResponse)
 def create_alert_config(alert_config: AlertConfigCreate):
     with get_db_connection() as conn:
@@ -117,21 +124,30 @@ def create_alert_config(alert_config: AlertConfigCreate):
                 alert_config.name,
                 alert_config.description,
                 alert_config.query,
-                str(alert_config.data_source_id) if alert_config.data_source_id else None,  # Convert UUID to string
+                str(alert_config.data_source_id) if alert_config.data_source_id else None,
                 alert_config.trigger_condition,
                 alert_config.schedule,
                 now,
                 now,
-                str(alert_config.created_by) if alert_config.created_by else None,  # Convert UUID to string
+                str(alert_config.created_by) if alert_config.created_by else None,
                 json.dumps(alert_config.notification_channels),
                 alert_config.priority
             ))
             conn.commit()
             result = cur.fetchone()
             
-            # Register this alert with Airflow (this would be handled by the Airflow DAG generator)
-            # In a real implementation, you might want to trigger an Airflow API call here
-            # or have a separate process that syncs alert configs with Airflow
+            # Create Airflow DAG for this alert
+            alert_id = result['id']
+            schedule_interval = parse_schedule(alert_config.schedule)
+            dag = create_alert_dag(alert_id, schedule_interval)
+            
+            # Add the DAG to Airflow's DagBag
+            dag_bag = DagBag()
+            dag_bag.dags[dag.dag_id] = dag
+            dag_bag.sync_to_db()
+            
+            # Send initial alert
+            check_alert(alert_id)
             
             return result
 

@@ -1,0 +1,588 @@
+[2025-03-22T10:56:17.691+0530] {processor.py:186} INFO - Started process (PID=32170) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:56:17.693+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T10:56:17.695+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:17.695+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:56:17.707+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:17.705+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T10:56:17.708+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:56:17.723+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.037 seconds
+[2025-03-22T10:57:19.998+0530] {processor.py:186} INFO - Started process (PID=32392) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:57:20.001+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T10:57:20.003+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:20.003+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:57:20.006+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:20.006+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T10:57:20.006+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:57:20.020+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T10:57:50.436+0530] {processor.py:186} INFO - Started process (PID=32724) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:57:50.438+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T10:57:50.439+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:50.439+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:57:50.443+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:50.441+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T10:57:50.443+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:57:50.456+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.025 seconds
+[2025-03-22T10:58:46.771+0530] {processor.py:186} INFO - Started process (PID=33211) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:58:46.772+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T10:58:46.775+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:46.774+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:58:46.779+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:46.777+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T10:58:46.779+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:58:46.793+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T10:59:45.364+0530] {processor.py:186} INFO - Started process (PID=33595) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:59:45.366+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T10:59:45.367+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:45.367+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:59:45.372+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:45.370+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T10:59:45.372+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T10:59:45.386+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.028 seconds
+[2025-03-22T11:00:40.474+0530] {processor.py:186} INFO - Started process (PID=33828) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:00:40.475+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:00:40.477+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:40.477+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:00:40.482+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:40.480+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:00:40.482+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:00:40.496+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T11:01:34.904+0530] {processor.py:186} INFO - Started process (PID=35217) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:01:34.906+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:01:34.908+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:34.907+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:01:34.913+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:34.912+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:01:34.914+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:01:34.929+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.031 seconds
+[2025-03-22T11:02:29.367+0530] {processor.py:186} INFO - Started process (PID=35400) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:02:29.369+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:02:29.369+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:29.369+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:02:29.374+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:29.372+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:02:29.374+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:02:29.387+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.024 seconds
+[2025-03-22T11:03:22.984+0530] {processor.py:186} INFO - Started process (PID=35498) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:03:22.985+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:03:22.987+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:22.985+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:03:22.991+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:22.989+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:03:22.991+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:03:23.004+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.025 seconds
+[2025-03-22T11:03:55.129+0530] {processor.py:186} INFO - Started process (PID=35564) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:03:55.130+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:03:55.131+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:55.131+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:03:55.135+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:55.134+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:03:55.136+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:03:55.150+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T11:04:47.966+0530] {processor.py:186} INFO - Started process (PID=35652) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:04:47.968+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:04:47.968+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:47.968+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:04:47.972+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:47.971+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:04:47.972+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:04:47.984+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.022 seconds
+[2025-03-22T11:05:41.084+0530] {processor.py:186} INFO - Started process (PID=35725) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:05:41.085+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:05:41.086+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:41.086+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:05:41.090+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:41.088+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:05:41.090+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:05:41.103+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.025 seconds
+[2025-03-22T11:06:34.883+0530] {processor.py:186} INFO - Started process (PID=35878) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:06:34.884+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:06:34.885+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:34.885+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:06:34.889+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:34.888+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:06:34.889+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:06:34.901+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:07:29.452+0530] {processor.py:186} INFO - Started process (PID=35990) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:07:29.454+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:07:29.455+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:29.455+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:07:29.459+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:29.458+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:07:29.459+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:07:29.473+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T11:08:23.751+0530] {processor.py:186} INFO - Started process (PID=36083) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:08:23.752+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:08:23.753+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:23.753+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:08:23.756+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:23.755+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:08:23.756+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:08:23.769+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.022 seconds
+[2025-03-22T11:09:13.918+0530] {processor.py:186} INFO - Started process (PID=36149) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:09:13.919+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:09:13.919+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:13.919+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:09:13.923+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:13.922+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:09:13.923+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:09:13.935+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.021 seconds
+[2025-03-22T11:10:08.783+0530] {processor.py:186} INFO - Started process (PID=36305) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:10:08.784+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:10:08.785+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:08.785+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:10:08.789+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:08.788+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:10:08.789+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:10:08.802+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.024 seconds
+[2025-03-22T11:10:58.046+0530] {processor.py:186} INFO - Started process (PID=36398) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:10:58.047+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:10:58.048+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:58.048+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:10:58.052+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:58.050+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:10:58.052+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:10:58.063+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.021 seconds
+[2025-03-22T11:11:53.520+0530] {processor.py:186} INFO - Started process (PID=36544) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:11:53.522+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:11:53.523+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:53.522+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:11:53.526+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:53.525+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:11:53.526+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:11:53.539+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:12:47.201+0530] {processor.py:186} INFO - Started process (PID=36733) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:12:47.203+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:12:47.204+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:47.204+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:12:47.207+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:47.206+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:12:47.208+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:12:47.219+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:13:40.846+0530] {processor.py:186} INFO - Started process (PID=36823) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:13:40.847+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:13:40.848+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:40.848+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:13:40.852+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:40.851+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:13:40.852+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:13:40.864+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:14:30.854+0530] {processor.py:186} INFO - Started process (PID=36917) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:14:30.855+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:14:30.856+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:30.856+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:14:30.860+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:30.858+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:14:30.860+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:14:30.873+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.024 seconds
+[2025-03-22T11:15:25.550+0530] {processor.py:186} INFO - Started process (PID=37005) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:15:25.551+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:15:25.552+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:25.552+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:15:25.556+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:25.555+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:15:25.556+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:15:25.567+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.022 seconds
+[2025-03-22T11:16:17.970+0530] {processor.py:186} INFO - Started process (PID=37143) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:16:17.971+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:16:17.972+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:17.971+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:16:17.975+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:17.974+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:16:17.975+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:16:17.988+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:17:13.363+0530] {processor.py:186} INFO - Started process (PID=37253) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:17:13.365+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:17:13.366+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:13.365+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:17:13.369+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:13.368+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:17:13.369+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:17:13.381+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.022 seconds
+[2025-03-22T11:18:04.792+0530] {processor.py:186} INFO - Started process (PID=37373) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:18:04.793+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:18:04.794+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:04.794+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:18:04.799+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:04.797+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:18:04.799+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:18:04.811+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.024 seconds
+[2025-03-22T11:18:54.442+0530] {processor.py:186} INFO - Started process (PID=37451) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:18:54.443+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:18:54.444+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:54.444+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:18:54.447+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:54.446+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:18:54.448+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:18:54.460+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:19:50.001+0530] {processor.py:186} INFO - Started process (PID=37535) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:19:50.002+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:19:50.003+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:50.003+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:19:50.008+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:50.006+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:19:50.008+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:19:50.020+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.023 seconds
+[2025-03-22T11:20:42.857+0530] {processor.py:186} INFO - Started process (PID=37656) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:20:42.858+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:20:42.859+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:42.859+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:20:42.863+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:42.862+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:20:42.863+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:20:42.874+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.022 seconds
+[2025-03-22T11:21:37.205+0530] {processor.py:186} INFO - Started process (PID=37841) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:21:37.208+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:21:37.210+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:37.210+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:21:37.214+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:37.213+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:21:37.214+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:21:37.229+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.028 seconds
+[2025-03-22T11:22:26.910+0530] {processor.py:186} INFO - Started process (PID=37953) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:22:26.911+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:22:26.912+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:26.912+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:22:26.916+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:26.915+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:22:26.917+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:22:26.932+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T11:23:19.623+0530] {processor.py:186} INFO - Started process (PID=38071) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:23:19.624+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:23:19.625+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:19.625+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:23:19.631+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:19.628+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:23:19.631+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:23:19.646+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T11:24:12.484+0530] {processor.py:186} INFO - Started process (PID=38178) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:24:12.486+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:24:12.487+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:12.487+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:24:12.493+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:12.491+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:24:12.493+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:24:12.508+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.029 seconds
+[2025-03-22T11:25:06.856+0530] {processor.py:186} INFO - Started process (PID=38295) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:25:06.858+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:25:06.859+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:06.859+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:25:06.864+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:06.862+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:25:06.864+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:25:06.877+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.026 seconds
+[2025-03-22T11:26:00.305+0530] {processor.py:186} INFO - Started process (PID=38468) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:26:00.307+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:26:00.308+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:00.308+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:26:00.314+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:00.312+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:26:00.314+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:26:00.328+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.027 seconds
+[2025-03-22T11:26:52.853+0530] {processor.py:186} INFO - Started process (PID=38584) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:26:52.855+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:26:52.856+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:52.856+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:26:52.860+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:52.858+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:26:52.860+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:26:52.873+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.024 seconds
+[2025-03-22T11:27:44.920+0530] {processor.py:186} INFO - Started process (PID=38689) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:27:44.921+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:27:44.922+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:44.922+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:27:44.927+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:44.925+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:27:44.927+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:27:44.942+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.029 seconds
+[2025-03-22T11:28:41.680+0530] {processor.py:186} INFO - Started process (PID=38919) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:28:41.682+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:28:41.683+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:41.683+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:28:41.689+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:41.687+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:28:41.689+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:28:41.706+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.033 seconds
+[2025-03-22T11:29:39.405+0530] {processor.py:186} INFO - Started process (PID=39119) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:29:39.407+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:29:39.408+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:39.408+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:29:39.414+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:39.412+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:29:39.414+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:29:39.434+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.037 seconds
+[2025-03-22T11:30:37.300+0530] {processor.py:186} INFO - Started process (PID=39398) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:30:37.301+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:30:37.302+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:37.302+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:30:37.308+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:37.306+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T11:30:37.308+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:30:37.320+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.025 seconds
+[2025-03-22T11:31:35.710+0530] {processor.py:186} INFO - Started process (PID=39902) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T11:31:35.737+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T11:31:35.789+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:31:35.742+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T13:31:09.882+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:31:35.907+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T13:31:09.919+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T13:31:11.030+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 2.563 seconds
+[2025-03-22T16:24:42.198+0530] {processor.py:186} INFO - Started process (PID=40658) to work on /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T16:24:42.206+0530] {processor.py:914} INFO - Processing file /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py for tasks to queue
+[2025-03-22T16:24:42.222+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:24:42.207+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T16:24:42.257+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:24:42.248+0530] {dagbag.py:387} ERROR - Failed to import: /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+Traceback (most recent call last):
+  File "/home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py", line 6, in <module>
+    from database import get_db_connection
+ModuleNotFoundError: No module named 'database'
+[2025-03-22T16:24:42.258+0530] {processor.py:927} WARNING - No viable dags retrieved from /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py
+[2025-03-22T16:24:42.302+0530] {processor.py:208} INFO - Processing /home/ak265/Desktop/analytics/airflow/dags/airflow_dags.py took 0.122 seconds

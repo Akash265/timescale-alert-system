@@ -1,0 +1,295 @@
+[2025-03-22T10:56:35.345+0530] {processor.py:186} INFO - Started process (PID=32233) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:56:35.345+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T10:56:35.348+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.347+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:56:35.357+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:56:35.442+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.442+0530] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_task_group
+[2025-03-22T10:56:35.450+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.450+0530] {override.py:1930} INFO - Created Permission View: can read on DAG:example_task_group
+[2025-03-22T10:56:35.456+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.456+0530] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_task_group
+[2025-03-22T10:56:35.464+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.463+0530] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_task_group
+[2025-03-22T10:56:35.471+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.470+0530] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_task_group
+[2025-03-22T10:56:35.477+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.477+0530] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_task_group
+[2025-03-22T10:56:35.483+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.483+0530] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_task_group
+[2025-03-22T10:56:35.483+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.483+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:56:35.494+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.494+0530] {dag.py:3262} INFO - Creating ORM DAG for example_task_group
+[2025-03-22T10:56:35.495+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:35.494+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T10:56:35.509+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.172 seconds
+[2025-03-22T10:57:36.164+0530] {processor.py:186} INFO - Started process (PID=32490) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:57:36.167+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T10:57:36.169+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:36.169+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:57:36.177+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:57:36.189+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:36.189+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:57:36.197+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:36.197+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T10:57:36.211+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.053 seconds
+[2025-03-22T10:58:33.889+0530] {processor.py:186} INFO - Started process (PID=33149) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:58:33.892+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T10:58:33.894+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:33.894+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:58:33.904+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:58:33.976+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:33.975+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:58:33.983+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:33.983+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T10:58:33.998+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.118 seconds
+[2025-03-22T10:59:30.952+0530] {processor.py:186} INFO - Started process (PID=33549) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:59:30.953+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T10:59:30.955+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:30.955+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:59:30.964+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T10:59:30.970+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:30.969+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:59:30.979+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:30.979+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T10:59:30.994+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.048 seconds
+[2025-03-22T11:00:26.694+0530] {processor.py:186} INFO - Started process (PID=33790) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:00:26.695+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:00:26.697+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:26.696+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:00:26.703+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:00:26.764+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:26.764+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:00:26.771+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:26.771+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:00:26.785+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.095 seconds
+[2025-03-22T11:01:22.088+0530] {processor.py:186} INFO - Started process (PID=35171) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:01:22.089+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:01:22.089+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:22.089+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:01:22.096+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:01:22.108+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:22.107+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:01:22.117+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:22.116+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:01:22.130+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.047 seconds
+[2025-03-22T11:02:16.778+0530] {processor.py:186} INFO - Started process (PID=35280) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:02:16.779+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:02:16.780+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:16.780+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:02:16.787+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:02:16.797+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:16.797+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:02:16.806+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:16.805+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:02:16.818+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:03:10.109+0530] {processor.py:186} INFO - Started process (PID=35465) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:03:10.110+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:03:10.111+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:10.111+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:03:10.118+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:03:10.129+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:10.129+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:03:10.138+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:10.138+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:03:10.150+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2025-03-22T11:04:10.268+0530] {processor.py:186} INFO - Started process (PID=35580) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:04:10.268+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:04:10.270+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:10.269+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:04:10.276+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:04:10.287+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:10.287+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:04:10.295+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:10.295+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:04:10.309+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:05:03.396+0530] {processor.py:186} INFO - Started process (PID=35671) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:05:03.397+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:05:03.398+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:03.397+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:05:03.404+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:05:03.415+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:03.415+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:05:03.423+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:03.423+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:05:03.436+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:05:56.226+0530] {processor.py:186} INFO - Started process (PID=35749) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:05:56.227+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:05:56.229+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:56.228+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:05:56.237+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:05:56.252+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:56.251+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:05:56.264+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:56.264+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:05:56.284+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.064 seconds
+[2025-03-22T11:06:51.332+0530] {processor.py:186} INFO - Started process (PID=35902) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:06:51.332+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:06:51.334+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:51.334+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:06:51.340+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:06:51.351+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:51.351+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:06:51.360+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:51.359+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:06:51.372+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2025-03-22T11:07:45.722+0530] {processor.py:186} INFO - Started process (PID=36006) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:07:45.723+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:07:45.724+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:45.723+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:07:45.730+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:07:45.743+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:45.742+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:07:45.751+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:45.751+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:07:45.763+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2025-03-22T11:08:39.062+0530] {processor.py:186} INFO - Started process (PID=36105) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:08:39.064+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:08:39.065+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:39.065+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:08:39.071+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:08:39.082+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:39.082+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:08:39.090+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:39.090+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:08:39.103+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:09:29.353+0530] {processor.py:186} INFO - Started process (PID=36234) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:09:29.354+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:09:29.355+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:29.355+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:09:29.363+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:09:29.374+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:29.373+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:09:29.382+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:29.381+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:09:29.393+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.044 seconds
+[2025-03-22T11:10:23.176+0530] {processor.py:186} INFO - Started process (PID=36321) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:10:23.177+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:10:23.178+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:23.178+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:10:23.185+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:10:23.196+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:23.196+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:10:23.206+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:23.206+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:10:23.218+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.047 seconds
+[2025-03-22T11:11:14.199+0530] {processor.py:186} INFO - Started process (PID=36455) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:11:14.200+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:11:14.201+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:14.201+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:11:14.207+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:11:14.218+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:14.218+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:11:14.226+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:14.226+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:11:14.238+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.043 seconds
+[2025-03-22T11:12:10.142+0530] {processor.py:186} INFO - Started process (PID=36565) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:12:10.144+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:12:10.146+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:10.146+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:12:10.157+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:12:10.175+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:10.175+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:12:10.189+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:10.188+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:12:10.209+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.076 seconds
+[2025-03-22T11:13:02.475+0530] {processor.py:186} INFO - Started process (PID=36767) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:13:02.476+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:13:02.477+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:02.477+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:13:02.483+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:13:02.494+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:02.494+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:13:02.502+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:02.502+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:13:02.515+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.044 seconds
+[2025-03-22T11:13:55.527+0530] {processor.py:186} INFO - Started process (PID=36849) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:13:55.528+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:13:55.529+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:55.529+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:13:55.535+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:13:55.546+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:55.546+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:13:55.554+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:55.554+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:13:55.567+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:14:47.132+0530] {processor.py:186} INFO - Started process (PID=36943) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:14:47.133+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:14:47.134+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:47.134+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:14:47.141+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:14:47.152+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:47.152+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:14:47.160+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:47.160+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:14:47.173+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.046 seconds
+[2025-03-22T11:15:42.074+0530] {processor.py:186} INFO - Started process (PID=37033) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:15:42.075+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:15:42.076+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:42.076+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:15:42.085+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:15:42.119+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:42.118+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:15:42.134+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:42.134+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:15:42.152+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.082 seconds
+[2025-03-22T11:16:33.106+0530] {processor.py:186} INFO - Started process (PID=37198) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:16:33.109+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:16:33.110+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:33.110+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:16:33.116+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:16:33.127+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:33.127+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:16:33.135+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:33.135+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:16:33.147+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:17:27.650+0530] {processor.py:186} INFO - Started process (PID=37301) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:17:27.651+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:17:27.652+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:27.652+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:17:27.658+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:17:27.670+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:27.669+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:17:27.677+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:27.677+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:17:27.690+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.044 seconds
+[2025-03-22T11:18:19.871+0530] {processor.py:186} INFO - Started process (PID=37399) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:18:19.871+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:18:19.873+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:19.872+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:18:19.879+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:18:19.890+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:19.889+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:18:19.898+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:19.898+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:18:19.910+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.043 seconds
+[2025-03-22T11:19:10.470+0530] {processor.py:186} INFO - Started process (PID=37477) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:19:10.470+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:19:10.472+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:10.471+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:19:10.478+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:19:10.488+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:10.488+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:19:10.496+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:10.496+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:19:10.509+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.045 seconds
+[2025-03-22T11:20:05.138+0530] {processor.py:186} INFO - Started process (PID=37551) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:20:05.139+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:20:05.140+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:05.140+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:20:05.147+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:20:05.158+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:05.158+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:20:05.166+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:05.166+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:20:05.181+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.047 seconds
+[2025-03-22T11:20:58.288+0530] {processor.py:186} INFO - Started process (PID=37737) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:20:58.289+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:20:58.291+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:58.290+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:20:58.297+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:20:58.308+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:58.308+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:20:58.317+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:58.317+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:20:58.330+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.047 seconds
+[2025-03-22T11:21:51.215+0530] {processor.py:186} INFO - Started process (PID=37867) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:21:51.215+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:21:51.217+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:51.217+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:21:51.225+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:21:51.239+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:51.239+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:21:51.247+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:51.247+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:21:51.264+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.053 seconds
+[2025-03-22T11:22:43.591+0530] {processor.py:186} INFO - Started process (PID=37989) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:22:43.592+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:22:43.595+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:43.594+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:22:43.603+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:22:43.617+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:43.617+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:22:43.627+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:43.627+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:22:43.644+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.058 seconds
+[2025-03-22T11:23:35.911+0530] {processor.py:186} INFO - Started process (PID=38096) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:23:35.913+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:23:35.914+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:35.914+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:23:35.924+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:23:35.937+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:35.936+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:23:35.947+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:35.946+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:23:35.960+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.055 seconds
+[2025-03-22T11:24:28.989+0530] {processor.py:186} INFO - Started process (PID=38245) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:24:28.990+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:24:28.991+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:28.991+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:24:28.998+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:24:29.012+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:29.012+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:24:29.022+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:29.022+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:24:29.040+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.057 seconds
+[2025-03-22T11:25:21.996+0530] {processor.py:186} INFO - Started process (PID=38367) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:25:21.997+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:25:21.998+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:21.998+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:25:22.004+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:25:22.018+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:22.017+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:25:22.028+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:22.027+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:25:22.042+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.052 seconds
+[2025-03-22T11:26:15.229+0530] {processor.py:186} INFO - Started process (PID=38493) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:26:15.230+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:26:15.232+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:15.231+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:26:15.239+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:26:15.251+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:15.250+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:26:15.261+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:15.261+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:26:15.276+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.051 seconds
+[2025-03-22T11:27:07.995+0530] {processor.py:186} INFO - Started process (PID=38600) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:27:07.996+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:27:07.998+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:07.998+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:27:08.005+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:27:08.019+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:08.019+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:27:08.028+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:08.028+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:27:08.044+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.054 seconds
+[2025-03-22T11:28:01.508+0530] {processor.py:186} INFO - Started process (PID=38736) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:28:01.510+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:28:01.512+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:01.511+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:28:01.520+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:28:01.534+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:01.534+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:28:01.545+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:01.545+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:28:01.562+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.060 seconds
+[2025-03-22T11:28:58.276+0530] {processor.py:186} INFO - Started process (PID=38972) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:28:58.277+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:28:58.278+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:58.278+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:28:58.285+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:28:58.297+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:58.297+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:28:58.307+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:58.307+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:28:58.324+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.053 seconds
+[2025-03-22T11:29:55.699+0530] {processor.py:186} INFO - Started process (PID=39197) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:29:55.700+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:29:55.702+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:55.702+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:29:55.711+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:29:55.723+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:55.723+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:29:55.733+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:55.733+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:29:55.748+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.054 seconds
+[2025-03-22T11:30:52.973+0530] {processor.py:186} INFO - Started process (PID=39605) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:30:52.975+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T11:30:52.979+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:52.976+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:30:52.996+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T11:30:53.017+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:53.016+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:30:53.031+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:53.030+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T11:30:53.048+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.082 seconds
+[2025-03-22T13:32:03.152+0530] {processor.py:186} INFO - Started process (PID=40266) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T13:32:03.190+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T13:32:03.249+0530] {logging_mixin.py:190} INFO - [2025-03-22T13:32:03.204+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T13:32:03.746+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T13:32:04.642+0530] {logging_mixin.py:190} INFO - [2025-03-22T13:32:04.537+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T13:32:05.029+0530] {logging_mixin.py:190} INFO - [2025-03-22T13:32:04.993+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T13:32:06.268+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 3.196 seconds
+[2025-03-22T16:25:00.592+0530] {processor.py:186} INFO - Started process (PID=40925) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T16:25:00.594+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2025-03-22T16:25:00.595+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:25:00.595+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T16:25:00.603+0530] {processor.py:925} INFO - DAG(s) 'example_task_group' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2025-03-22T16:25:00.614+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:25:00.614+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T16:25:00.623+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:25:00.623+0530] {dag.py:4180} INFO - Setting next_dagrun for example_task_group to None, run_after=None
+[2025-03-22T16:25:00.635+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.048 seconds

@@ -1,0 +1,288 @@
+[2025-03-22T10:56:38.105+0530] {processor.py:186} INFO - Started process (PID=32236) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:56:38.106+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T10:56:38.108+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.108+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:56:38.119+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:56:38.206+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.205+0530] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_xcom
+[2025-03-22T10:56:38.214+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.214+0530] {override.py:1930} INFO - Created Permission View: can read on DAG:example_xcom
+[2025-03-22T10:56:38.222+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.222+0530] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_xcom
+[2025-03-22T10:56:38.231+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.231+0530] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_xcom
+[2025-03-22T10:56:38.237+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.237+0530] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_xcom
+[2025-03-22T10:56:38.245+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.245+0530] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_xcom
+[2025-03-22T10:56:38.251+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.251+0530] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_xcom
+[2025-03-22T10:56:38.252+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.251+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:56:38.263+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.263+0530] {dag.py:3262} INFO - Creating ORM DAG for example_xcom
+[2025-03-22T10:56:38.269+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:56:38.268+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T10:56:38.282+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.183 seconds
+[2025-03-22T10:57:39.146+0530] {processor.py:186} INFO - Started process (PID=32538) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:57:39.148+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T10:57:39.151+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:39.151+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:57:39.164+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:57:39.184+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:39.184+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:57:39.205+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:57:39.205+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T10:57:39.229+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2025-03-22T10:58:37.600+0530] {processor.py:186} INFO - Started process (PID=33161) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:58:37.601+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T10:58:37.602+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:37.602+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:58:37.608+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:58:37.670+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:37.670+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:58:37.682+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:58:37.682+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T10:58:37.695+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.101 seconds
+[2025-03-22T10:59:34.387+0530] {processor.py:186} INFO - Started process (PID=33575) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:59:34.388+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T10:59:34.391+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:34.390+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:59:34.404+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T10:59:34.413+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:34.413+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T10:59:34.438+0530] {logging_mixin.py:190} INFO - [2025-03-22T10:59:34.438+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T10:59:34.464+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.085 seconds
+[2025-03-22T11:00:30.220+0530] {processor.py:186} INFO - Started process (PID=33801) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:00:30.221+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:00:30.222+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:30.222+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:00:30.230+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:00:30.295+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:30.295+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:00:30.307+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:00:30.307+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:00:30.321+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.106 seconds
+[2025-03-22T11:01:24.605+0530] {processor.py:186} INFO - Started process (PID=35188) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:01:24.605+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:01:24.606+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:24.606+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:01:24.613+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:01:24.626+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:24.626+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:01:24.639+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:01:24.639+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:01:24.653+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.053 seconds
+[2025-03-22T11:02:19.321+0530] {processor.py:186} INFO - Started process (PID=35319) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:02:19.322+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:02:19.323+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:19.323+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:02:19.332+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:02:19.347+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:19.347+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:02:19.363+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:02:19.363+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:02:19.387+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.072 seconds
+[2025-03-22T11:03:13.353+0530] {processor.py:186} INFO - Started process (PID=35478) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:03:13.354+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:03:13.355+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:13.355+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:03:13.362+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:03:13.372+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:13.372+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:03:13.384+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:03:13.384+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:03:13.396+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.047 seconds
+[2025-03-22T11:04:13.226+0530] {processor.py:186} INFO - Started process (PID=35589) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:04:13.227+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:04:13.228+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:13.228+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:04:13.235+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:04:13.246+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:13.245+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:04:13.258+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:04:13.257+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:04:13.270+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.048 seconds
+[2025-03-22T11:05:06.603+0530] {processor.py:186} INFO - Started process (PID=35674) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:05:06.604+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:05:06.605+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:06.605+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:05:06.612+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:05:06.622+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:06.622+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:05:06.634+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:06.634+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:05:06.647+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.048 seconds
+[2025-03-22T11:05:58.787+0530] {processor.py:186} INFO - Started process (PID=35752) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:05:58.788+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:05:58.789+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:58.789+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:05:58.798+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:05:58.810+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:58.810+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:05:58.824+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:05:58.824+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:05:58.837+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.055 seconds
+[2025-03-22T11:06:54.741+0530] {processor.py:186} INFO - Started process (PID=35905) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:06:54.743+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:06:54.744+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:54.744+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:06:54.751+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:06:54.761+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:54.761+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:06:54.773+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:06:54.773+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:06:54.786+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.050 seconds
+[2025-03-22T11:07:48.591+0530] {processor.py:186} INFO - Started process (PID=36019) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:07:48.592+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:07:48.593+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:48.593+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:07:48.600+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:07:48.614+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:48.613+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:07:48.628+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:07:48.628+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:07:48.645+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.058 seconds
+[2025-03-22T11:08:41.554+0530] {processor.py:186} INFO - Started process (PID=36108) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:08:41.555+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:08:41.556+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:41.556+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:08:41.563+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:08:41.573+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:41.573+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:08:41.587+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:08:41.587+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:08:41.601+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.051 seconds
+[2025-03-22T11:09:32.279+0530] {processor.py:186} INFO - Started process (PID=36241) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:09:32.280+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:09:32.281+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:32.281+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:09:32.288+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:09:32.299+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:32.298+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:09:32.313+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:09:32.313+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:09:32.327+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.052 seconds
+[2025-03-22T11:10:26.031+0530] {processor.py:186} INFO - Started process (PID=36324) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:10:26.032+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:10:26.033+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:26.033+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:10:26.040+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:10:26.051+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:26.051+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:10:26.064+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:10:26.063+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:10:26.075+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.048 seconds
+[2025-03-22T11:11:17.576+0530] {processor.py:186} INFO - Started process (PID=36460) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:11:17.577+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:11:17.579+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:17.578+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:11:17.588+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:11:17.604+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:17.604+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:11:17.621+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:11:17.621+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:11:17.637+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.068 seconds
+[2025-03-22T11:12:13.079+0530] {processor.py:186} INFO - Started process (PID=36568) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:12:13.080+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:12:13.081+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:13.080+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:12:13.088+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:12:13.099+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:13.099+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:12:13.112+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:12:13.112+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:12:13.126+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.051 seconds
+[2025-03-22T11:13:05.611+0530] {processor.py:186} INFO - Started process (PID=36770) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:13:05.611+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:13:05.612+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:05.612+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:13:05.619+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:13:05.629+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:05.629+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:13:05.641+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:05.641+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:13:05.654+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.049 seconds
+[2025-03-22T11:13:58.009+0530] {processor.py:186} INFO - Started process (PID=36857) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:13:58.009+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:13:58.010+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:58.010+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:13:58.017+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:13:58.027+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:58.027+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:13:58.039+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:13:58.039+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:13:58.052+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.047 seconds
+[2025-03-22T11:14:50.549+0530] {processor.py:186} INFO - Started process (PID=36948) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:14:50.550+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:14:50.551+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:50.551+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:14:50.558+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:14:50.568+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:50.568+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:14:50.580+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:14:50.580+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:14:50.594+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.049 seconds
+[2025-03-22T11:15:44.695+0530] {processor.py:186} INFO - Started process (PID=37036) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:15:44.696+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:15:44.697+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:44.697+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:15:44.704+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:15:44.715+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:44.715+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:15:44.727+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:15:44.727+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:15:44.740+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.048 seconds
+[2025-03-22T11:16:36.253+0530] {processor.py:186} INFO - Started process (PID=37201) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:16:36.256+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:16:36.257+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:36.257+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:16:36.263+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:16:36.273+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:36.273+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:16:36.285+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:16:36.285+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:16:36.298+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.049 seconds
+[2025-03-22T11:17:31.064+0530] {processor.py:186} INFO - Started process (PID=37310) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:17:31.064+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:17:31.065+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:31.065+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:17:31.071+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:17:31.082+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:31.082+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:17:31.095+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:17:31.095+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:17:31.108+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.048 seconds
+[2025-03-22T11:18:22.420+0530] {processor.py:186} INFO - Started process (PID=37402) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:18:22.421+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:18:22.421+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:22.421+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:18:22.428+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:18:22.439+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:22.438+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:18:22.450+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:18:22.450+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:18:22.462+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.046 seconds
+[2025-03-22T11:19:13.884+0530] {processor.py:186} INFO - Started process (PID=37481) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:19:13.885+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:19:13.885+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:13.885+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:19:13.892+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:19:13.902+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:13.902+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:19:13.914+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:19:13.914+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:19:13.927+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.048 seconds
+[2025-03-22T11:20:07.980+0530] {processor.py:186} INFO - Started process (PID=37554) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:20:07.980+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:20:07.981+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:07.981+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:20:07.989+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:20:07.998+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:07.998+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:20:08.010+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:20:08.010+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:20:08.021+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.046 seconds
+[2025-03-22T11:21:01.094+0530] {processor.py:186} INFO - Started process (PID=37743) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:21:01.095+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:21:01.096+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:01.096+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:21:01.102+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:21:01.115+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:01.115+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:21:01.128+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:01.128+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:21:01.142+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.052 seconds
+[2025-03-22T11:21:54.640+0530] {processor.py:186} INFO - Started process (PID=37870) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:21:54.641+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:21:54.642+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:54.642+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:21:54.650+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:21:54.663+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:54.663+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:21:54.679+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:21:54.679+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:21:54.694+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.060 seconds
+[2025-03-22T11:22:46.447+0530] {processor.py:186} INFO - Started process (PID=37999) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:22:46.448+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:22:46.449+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:46.449+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:22:46.457+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:22:46.471+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:46.471+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:22:46.486+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:22:46.486+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:22:46.502+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.062 seconds
+[2025-03-22T11:23:39.076+0530] {processor.py:186} INFO - Started process (PID=38099) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:23:39.077+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:23:39.078+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:39.078+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:23:39.089+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:23:39.103+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:39.103+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:23:39.116+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:23:39.116+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:23:39.128+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.057 seconds
+[2025-03-22T11:24:31.570+0530] {processor.py:186} INFO - Started process (PID=38248) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:24:31.571+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:24:31.572+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:31.572+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:24:31.579+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:24:31.592+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:31.592+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:24:31.607+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:24:31.607+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:24:31.622+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.058 seconds
+[2025-03-22T11:25:24.463+0530] {processor.py:186} INFO - Started process (PID=38370) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:25:24.464+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:25:24.465+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:24.464+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:25:24.473+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:25:24.487+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:24.487+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:25:24.501+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:25:24.501+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:25:24.515+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.059 seconds
+[2025-03-22T11:26:18.631+0530] {processor.py:186} INFO - Started process (PID=38507) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:26:18.632+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:26:18.633+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:18.633+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:26:18.642+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:26:18.656+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:18.656+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:26:18.673+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:26:18.673+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:26:18.688+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.062 seconds
+[2025-03-22T11:27:11.165+0530] {processor.py:186} INFO - Started process (PID=38603) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:27:11.166+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:27:11.167+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:11.167+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:27:11.174+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:27:11.187+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:11.187+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:27:11.201+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:27:11.201+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:27:11.216+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.057 seconds
+[2025-03-22T11:28:04.437+0530] {processor.py:186} INFO - Started process (PID=38739) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:28:04.438+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:28:04.439+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:04.439+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:28:04.448+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:28:04.461+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:04.461+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:28:04.476+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:28:04.476+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:28:04.493+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.061 seconds
+[2025-03-22T11:29:01.683+0530] {processor.py:186} INFO - Started process (PID=39000) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:29:01.684+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:29:01.686+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:01.686+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:29:01.693+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:29:01.704+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:01.703+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:29:01.715+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:01.715+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:29:01.730+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.052 seconds
+[2025-03-22T11:29:58.944+0530] {processor.py:186} INFO - Started process (PID=39204) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:29:58.945+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:29:58.946+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:58.946+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:29:58.953+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:29:58.967+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:58.967+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:29:58.984+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:29:58.984+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:29:59.001+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.063 seconds
+[2025-03-22T11:30:55.712+0530] {processor.py:186} INFO - Started process (PID=39708) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:30:55.713+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T11:30:55.715+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:55.714+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:30:55.730+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T11:30:55.744+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:55.744+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T11:30:55.758+0530] {logging_mixin.py:190} INFO - [2025-03-22T11:30:55.758+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T11:30:55.777+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.070 seconds
+[2025-03-22T16:24:30.824+0530] {processor.py:186} INFO - Started process (PID=40457) to work on /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T16:24:30.833+0530] {processor.py:914} INFO - Processing file /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2025-03-22T16:24:30.852+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:24:30.835+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T16:24:30.921+0530] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py
+[2025-03-22T16:24:30.971+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:24:30.971+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-22T16:24:31.001+0530] {logging_mixin.py:190} INFO - [2025-03-22T16:24:31.001+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2025-03-22T16:24:31.049+0530] {processor.py:208} INFO - Processing /home/ak265/anaconda3/envs/llm-api/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py took 0.256 seconds
